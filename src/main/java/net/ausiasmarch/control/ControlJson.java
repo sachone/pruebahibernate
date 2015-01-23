@@ -41,7 +41,8 @@ public class ControlJson extends HttpServlet {
 
             if (ob.equalsIgnoreCase("coche") && op.equalsIgnoreCase("get")) {
                 CocheGet oCoche = new CocheGet();
-                oCoche.execute(request, response);
+                out.println(oCoche.execute(request, response));
+                
             }
 
         }
